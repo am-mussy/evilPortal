@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>~*~ X@K3P_PRO_2004 :: ВЗЛОМ ПЕНТАГОНА И ICQ ~*~</title>
+<style>
+  body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: "Comic Sans MS", "Courier New", monospace;
+    margin: 0;
+    overflow-x: hidden;
+    cursor: crosshair;
+  }
+  #matrix {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: -1;
+    opacity: 0.35;
+  }
+  .marquee-top {
+    background: #ff0000;
+    color: #ffff00;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 3px ridge #00ff00;
+    padding: 4px;
+    text-shadow: 2px 2px #000;
+  }
+  .container {
+    width: 800px;
+    margin: 15px auto;
+    border: 5px groove #00ff00;
+    background: rgba(0, 15, 0, 0.9);
+    padding: 15px;
+    box-shadow: 0 0 25px #00ff00;
+    text-align: center;
+  }
+  h1 {
+    font-size: 36px;
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000, 2px 2px #ffff00;
+    animation: blink 0.4s infinite alternate;
+    margin: 10px 0;
+  }
+  @keyframes blink {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0.6; transform: scale(1.03); color: #00ffff; }
+  }
+  .skull {
+    font-family: monospace;
+    white-space: pre;
+    color: #ff00ff;
+    font-size: 11px;
+    line-height: 11px;
+    margin: 10px auto;
+  }
+  .panel {
+    border: 3px inset #00ff00;
+    background: #001100;
+    padding: 10px;
+    margin: 12px 0;
+    text-align: left;
+  }
+  .btn-hack {
+    background: linear-gradient(to bottom, #ff0000, #550000);
+    color: #ffff00;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: 4px outset #ff0000;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px #ff0000;
+  }
+  .btn-hack:active {
+    border-style: inset;
+  }
+  .progress-wrap {
+    width: 100%;
+    background: #222;
+    border: 2px inset #fff;
+    height: 26px;
+    margin-top: 10px;
+    position: relative;
+  }
+  .progress-bar {
+    width: 0%;
+    height: 100%;
+    background: repeating-linear-gradient(45deg, #00ff00, #00ff00 10px, #005500 10px, #005500 20px);
+    transition: width 0.2s;
+  }
+  .log {
+    height: 130px;
+    overflow-y: auto;
+    background: #000;
+    color: #0f0;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    padding: 8px;
+    border: 2px solid #005500;
+  }
+  .badges span {
+    display: inline-block;
+    border: 2px outset #888;
+    background: #222;
+    color: #fff;
+    font-size: 10px;
+    font-family: Tahoma, sans-serif;
+    padding: 2px 6px;
+    margin: 3px;
+  }
+  .ip-box {
+    color: #00ffff;
+    font-size: 18px;
+    border: 2px dashed #ff00ff;
+    padding: 8px;
+    margin: 10px 0;
+    background: #110011;
+  }
+</style>
+</head>
+<body>
+
+<canvas id="matrix"></canvas>
+
+<div class="marquee-top">
+  <marquee scrollamount="12">⚠️ ВНИМАНИЕ!!! ТВОЙ IP УЖЕ В БАЗЕ ФСБ И ПЕНТАГОНА! СКАЧАТЬ ПРОГРАММУ ДЛЯ ВЗЛОМА КАЗИНО ВУЛКАН И ICQ БЕЗ СМС И РЕГИСТРАЦИИ :: X@K3P_2004 (c) ⚠️</marquee>
+</div>
+
+<div class="container">
+  <h1>☠️ ~ [ C Y B E R _ S T A L K E R _ 6 6 6 ] ~ ☠️</h1>
+  <div><i>«Мы — легион, мы не прощаем, мама позвала кушать»</i></div>
+
+  <div class="skull">
+       ______
+    .-"      "-.
+   /            \
+  |              |
+  |,  .-.  .-.  ,|
+  | )(_o/  \o_)( |
+  |/     /\     \|
+  (_     ^^     _)
+   \__|IIIIII|__/
+    | \IIIIII/ |
+    \          /
+     `--------`
+  </div>
+
+  <div class="ip-box">
+    👁️ <b>ТВОЙ IP ВЫЧИСЛЕН:</b> <span id="user-ip">127.0.0.1 (ЛОХ_DETECTED)</span><br>
+    🖥️ <b>ОС:</b> Windows XP ZverCD SP3 | <b>Браузер:</b> Internet Explorer 6.0 | <b>UIN ICQ:</b> 481-992-104 (УГНАН)
+  </div>
+
+  <div class="panel">
+    <b>🔥 ВЫБЕРИ ЦЕЛЬ ДЛЯ МЕГА-ДДОС АТАКИ (SubSeven + Троян.Winlock):</b><br><br>
+    <label><input type="checkbox" checked> Взломать Пентагон и скачать НЛО.avi</label><br>
+    <label><input type="checkbox" checked> Накрутить 999999 голосов ВКонтакте и ОКи</label><br>
+    <label><input type="checkbox" checked> Открыть сидиром у соседа по локалке</label><br>
+    <label><input type="checkbox" checked> Скачать кряк для Kaspersky (без вирусов 100%)</label>
+  </div>
+
+  <button class="btn-hack" onclick="startHack()">💀 НАЧАТЬ ВЗЛОМ ЖОПЫ 💀</button>
+
+  <div class="progress-wrap">
+    <div class="progress-bar" id="bar"></div>
+  </div>
+  <div id="percent" style="margin: 5px; font-weight: bold; color: #ffff00;">СТАТУС: ОЖИДАНИЕ ПРИКАЗА ЭЛИТЫ...</div>
+
+  <div class="panel">
+    <div class="log" id="console">
+      [00:00:01] Welcome to Narod.ru Hacker Portal v.3.1337...<br>
+      [00:00:02] Загрузка базы шестизнаков ICQ... OK!<br>
+      [00:00:03] Подключение через прокси Урюпинска... OK!<br>
+    </div>
+  </div>
+
+  <marquee direction="right" scrollamount="8" style="color:#ff00ff; font-weight:bold;">
+    ★ ПЕРЕДАЮ ПРИВЕТ КЛАНУ [Na'Vi_2005], ТЕМЕ ~ДиМаСиК~ И ВСЕМ ПАЦАНАМ С ФОРУМА ANTICHAT ★
+  </marquee>
+
+  <hr color="#00ff00">
+  <div class="badges">
+    <span>[x] Написано в Блокноте</span>
+    <span>[!] Best viewed 800x600</span>
+    <span>[ICQ: 666-1337]</span>
+    <span>[Хакер №1 на Narod.ru]</span>
+    <span>[Счетчик Rambler: 999999]</span>
+  </div>
+</div>
+
+<script>
+  // Матрица на фоне
+  const canvas = document.getElementById('matrix');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  const chars = '01X@K3PПЕНТАГОНЛОХ666$#%'.split('');
+  const drops = Array(Math.floor(canvas.width / 14)).fill(1);
+  setInterval(() => {
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.07)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#0f0';
+    ctx.font = '14px monospace';
+    drops.forEach((y, i) => {
+      const text = chars[Math.floor(Math.random() * chars.length)];
+      ctx.fillText(text, i * 14, y * 14);
+      if (y * 14 > canvas.height && Math.random() > 0.975) drops[i] = 0;
+      drops[i]++;
+    });
+  }, 40);
+
+  // Пищалка 8-бит из 2000-х
+  function beep(freq = 600, dur = 80) {
+    try {
+      const a = new (window.AudioContext || window.webkitAudioContext)();
+      const o = a.createOscillator();
+      o.type = 'square';
+      o.frequency.value = freq;
+      o.connect(a.destination);
+      o.start();
+      setTimeout(() => { o.stop(); a.close(); }, dur);
+    } catch(e) {}
+  }
+
+  // Фейковый IP
+  document.getElementById('user-ip').innerText =
+    `192.168.${Math.floor(Math.random()*255)}.${Math.floor(Math.random()*255)} (МОСКВА, УЛ. ПУШКИНА, ДОМ КОЛОТУШКИНА)`;
+
+  const logs = [
+    "Пингуем сервер Пентагона: ping 127.0.0.1 -t -l 65500...",
+    "ВНИМАНИЕ! Обнаружен файрвол Касперского! Включаю поросячий визг...",
+    "Качаем базу паролей mail.ru (olga1992@bk.ru : 123456)...",
+    "Заливаем c99shell.php в папку /images/kotiki/...",
+    "Отправляем троян 'Голые_Ранетки.exe' админу локалки...",
+    "Угон шестизнака ICQ... УСПЕШНО!",
+    "Форматирование диска C:\\ у всех неверных... 48%...",
+    "ФСБ пытается отследить модем USRobotics 56k... СБРОС ГУДКА!",
+    "ВЗЛОМ ЗАВЕРШЕН! Деньги переведены на WebMoney (WMZ)!"
+  ];
+
+  function startHack() {
+    let p = 0;
+    const bar = document.getElementById('bar');
+    const pct = document.getElementById('percent');
+    const con = document.getElementById('console');
+    let step = 0;
+
+    const timer = setInterval(() => {
+      p += Math.floor(Math.random() * 14) + 5;
+      if (p >= 100) p = 100;
+      bar.style.width = p + '%';
+      pct.innerText = `ВЗЛОМ В ПРОЦЕССЕ: ${p}% (НЕ ВЫКЛЮЧАЙ МОДЕМ, МАМА ТРУБКУ СНИМЕТ!)`;
+      beep(300 + p * 6, 60);
+
+      if (step < logs.length) {
+        con.innerHTML += `> ${logs[step]}<br>`;
+        con.scrollTop = con.scrollHeight;
+        step++;
+      }
+
+      if (p === 100) {
+        clearInterval(timer);
+        beep(900, 300);
+        setTimeout(() => {
+          alert("⚠️ CRITICAL ERROR 1337 ⚠️\n\nПЕНТАГОН УСПЕШНО ВЗЛОМАН!\nЧтобы ФСБ не приехало в пазик, отправь СМС с текстом 'Я НЕ ЛОХ' на короткий номер 4242 (стоимость 99 у.е. без НДС).");
+        }, 200);
+      }
+    }, 300);
+  }
+</script>
+</body>
+</html>
